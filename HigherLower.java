@@ -66,6 +66,10 @@ public class HigherLower
                 if(sc.hasNextInt())
                 {
                     bet = sc.nextInt();
+                    if(bet<=0)
+                    {
+                        System.out.println("Bet must be greater than 0");
+                    }
                     if(bet>bankroll)
                     {
                         System.out.println("Enter less than total Bankroll");
